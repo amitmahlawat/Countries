@@ -48,10 +48,10 @@ Promise.all(data.borders.map((border)=>{
 }
 
 useEffect(()=>{
-  if(state){
-    updateCountryData(state)
-    return
-  }
+  // if(state){
+  //   updateCountryData(state)
+  //   return
+  // }
     fetch(`https://restcountries.com/v3.1/name/${params.country}?fullText=true`)
 .then((res)=>{
       return  res.json()
